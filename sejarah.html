@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sejarah Lengkap Provinsi Bengkulu">
+    <title>Sejarah Provinsi Bengkulu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+            opacity: 0;
+            animation: fadeInBody 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeInBody {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background-image: url(bengkulu.jpg);
+            color: rgb(3, 87, 79);
+            padding: 60px;
+            text-align: center;
+            animation: slideInHeader 1s ease-out;
+        }
+
+        @keyframes slideInHeader {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        nav {
+            background-color: #003939;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            animation: fadeInNav 1s ease-out 0.5s;
+        }
+
+        @keyframes fadeInNav {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #007070;
+            transform: scale(1.1);
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            animation: fadeInMain 1s ease-out 1s;
+        }
+
+        @keyframes fadeInMain {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #002626;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #005f5f;
+            text-align: center;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeInText 1s ease-in-out 1.5s forwards;
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        p {
+            opacity: 0;
+            animation: fadeInText 1s ease-in-out forwards;
+        }
+
+        .sejarah-image {
+            width: 300px;
+            max-width: 600px;
+            height: auto;
+            margin: 20px 0;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            animation: fadeInImage 1s ease-in-out 2s forwards;
+        }
+
+        @keyframes fadeInImage {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 14px;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sejarah Provinsi Bengkulu</h1>
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="makanan_khas.html">Makanan Khas</a>
+        <a href="kabupaten_kota.html">Kabupaten/Kota</a>
+        <a href="flora_fauna.html">Flora & Fauna</a>
+        <a href="wisata.html">Wisata</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Sejarah Awal Bengkulu</h2>
+            <p>Bengkulu telah dihuni sejak zaman prasejarah, dengan bukti berupa penemuan artefak megalitik di beberapa wilayah. Pada masa Kerajaan Sriwijaya, daerah ini menjadi salah satu pusat perdagangan di pantai barat Sumatra, terutama untuk hasil bumi seperti lada, emas, dan rempah-rempah.</p>
+            <img src="peta_wilayah_kerajaan_sriwijaya.jpg" alt="Peta Kerajaan Sriwijaya" class="sejarah-image">
+            <p>Kerajaan kecil seperti Sungai Serut dan Selebar berkembang di wilayah ini, sebelum akhirnya pengaruh Kesultanan Aceh dan Minangkabau mulai terasa pada abad ke-15. Kesultanan Aceh memainkan peran penting dalam mengontrol perdagangan di kawasan ini.</p>
+        </section>
+        <section>
+            <h2>Kolonialisme di Bengkulu</h2>
+            <p>Pada abad ke-17, Inggris mendirikan benteng pertahanan di Bengkulu, yaitu Fort Marlborough, sebagai basis mereka untuk mengontrol perdagangan lada. Benteng ini menjadi salah satu peninggalan kolonial Inggris terbesar di Asia Tenggara.</p>
+            <img src="benteng.JPG" alt="Fort Marlborough Bengkulu" class="sejarah-image">
+            <p>Namun, pada tahun 1824, melalui Perjanjian London, Inggris menyerahkan Bengkulu kepada Belanda sebagai pertukaran atas Singapura. Di bawah pemerintahan Belanda, Bengkulu tetap menjadi wilayah strategis untuk perdagangan, meskipun sering terjadi perlawanan dari masyarakat setempat.</p>
+        </section>
+        <section>
+            <h2>Peran Bengkulu dalam Perjuangan Kemerdekaan</h2>
+            <p>Bengkulu memiliki peran penting dalam perjuangan kemerdekaan Indonesia. Pada tahun 1938-1942, Bung Karno diasingkan oleh Belanda ke Bengkulu. Selama masa pengasingan, Bung Karno banyak berinteraksi dengan masyarakat Bengkulu dan menyebarkan ide-ide kemerdekaan.</p>
+            <img src="bungkarno.jpg" alt="Bung Karno di Bengkulu" class="sejarah-image">
+            <p>Di Bengkulu pula, Bung Karno bertemu dengan Fatmawati, yang kemudian menjadi istri beliau dan menjahit bendera Merah Putih pertama. Banyak tokoh masyarakat Bengkulu yang turut serta dalam perjuangan melawan penjajah, baik Belanda maupun Jepang.</p>
+        </section>
+        <section>
+            <h2>Bengkulu sebagai Provinsi</h2>
+            <p>Setelah Indonesia merdeka, Bengkulu awalnya merupakan bagian dari Provinsi Sumatra Selatan. Pada tahun 1968, Bengkulu secara resmi menjadi provinsi tersendiri berdasarkan Undang-Undang Nomor 9 Tahun 1967. Kota Bengkulu ditetapkan sebagai ibu kota provinsi.</p>
+            <img src="bengkulu.jpg" alt="Peta Provinsi Bengkulu" class="sejarah-image">
+            <p>Hingga kini, Bengkulu terus berkembang, dengan fokus pada pelestarian budaya, sejarah, dan pengembangan potensi ekonomi, terutama di bidang pertanian, perikanan, dan pariwisata.</p>
+        </section>
+        <P>untuk lebih jelas kunjungi website berikut<a href="https://r.search.yahoo.com/_ylt=Awrjfeihf3pnaesJIPpXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1737290914/RO=10/RU=https%3a%2f%2fid.wikipedia.org%2fwiki%2fSejarah_Bengkulu/RK=2/RS=nYqT4eMBFYYHiKrygUdpyLeuToU-" target="_blank"> jelajahi
+        </a></P>
+        
+    </main>
+    <footer>
+        <p>&copy; 2025 Portal Informasi Bengkulu. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>

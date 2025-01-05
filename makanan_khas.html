@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Makanan Khas Provinsi Bengkulu">
+    <title>Makanan Khas Bengkulu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            opacity: 0;
+            animation: fadeInBody 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeInBody {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        header {
+            background-image: url(bengkulu.jpg);
+            color:rgb(3, 87, 79);
+            padding: 60px;
+            text-align: center;
+            position: relative;
+            animation: headerBackground 5s linear infinite;
+        }
+
+        @keyframes headerBackground {
+            0% { background-color: #005f5f; }
+            50% { background-color: #007070; }
+            100% { background-color: #005f5f; }
+        }
+
+        nav {
+            background-color: #003939;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            animation: fadeInNav 1s ease-out 0.5s;
+        }
+
+        @keyframes fadeInNav {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #007070;
+            transform: scale(1.1);
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            animation: fadeInMain 1s ease-out 1s;
+        }
+
+        @keyframes fadeInMain {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        section {
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: slideUp 1s ease-out forwards;
+            transform: translateY(20px);
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            background-color: #002626;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #005f5f;
+            text-align: center;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeInText 1s ease-in-out 1.5s forwards;
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .makanan-image {
+            width: 300px;
+            max-width: 600px;
+            height: auto;
+            margin: 20px 0;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            animation: fadeInImage 1s ease-in-out 2s forwards;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        @keyframes fadeInImage {
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .makanan-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 14px;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Makanan Khas Bengkulu</h1>
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="sejarah.html">Sejarah</a>
+        <a href="kabupaten_kota.html">Kabupaten/Kota</a>
+        <a href="flora_fauna.html">Flora & Fauna</a>
+        <a href="wisata.html">Wisata</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Pendap</h2>
+            <img src="pendap.jpeg" alt="Pendap Bengkulu" class="makanan-image">
+            <p>Pendap adalah makanan khas Bengkulu yang terkenal. Makanan ini terbuat dari ikan yang dibumbui dengan campuran rempah-rempah seperti bawang putih, kunyit, dan cabai, kemudian dibungkus dengan daun talas dan dikukus hingga matang. Rasanya yang gurih dan sedikit pedas membuatnya menjadi favorit di berbagai acara adat.</p>
+        </section>
+        <section>
+            <h2>Bolu Koja</h2>
+            <img src="Makanan-Khas-Bengkulu-Bolu-Koja.jpg" alt="Bolu Koja" class="makanan-image">
+            <p>Bolu Koja adalah kue tradisional Bengkulu yang memiliki tekstur lembut dan rasa manis legit. Kue ini terbuat dari campuran tepung terigu, telur, santan, dan daun pandan, sehingga menghasilkan aroma yang harum dan khas.</p>
+        </section>
+        <section>
+            <h2>Lema</h2>
+            <img src="lema.jpeg" alt="Lema Bengkulu" class="makanan-image">
+            <p>Lema adalah makanan fermentasi yang terbuat dari rebung (tunas bambu muda) dan ikan yang dicampur dengan bumbu tradisional. Makanan ini biasanya disantap sebagai pelengkap nasi dan dikenal memiliki rasa yang unik serta kaya akan probiotik.</p>
+        </section>
+        <section>
+            <h2>Kue Tat</h2>
+            <img src="tat.jpg" alt="Kue Tat Bengkulu" class="makanan-image">
+            <p>Kue Tat adalah kue tradisional Bengkulu yang berbentuk seperti pie dengan isian selai nanas. Kue ini biasanya dihidangkan saat perayaan atau hari besar seperti Lebaran dan memiliki rasa manis yang lembut.</p>
+        </section>
+        <section>
+            <h2>Bay Tat</h2>
+            <img src="bai tat.jpeg" alt="Bay Tat Bengkulu" class="makanan-image">
+            <p>Bay Tat adalah sejenis kue tradisional yang dibuat dari tepung ketan, kelapa parut, dan gula aren. Rasanya manis dan teksturnya kenyal, menjadikannya camilan yang digemari banyak orang.</p>
+        </section>
+        <p>Masih banyak lagi makanan khas yang ada di Provinsi Bengkulu, untuk lebih jelas kunjungi website berikut><a href="https://r.search.yahoo.com/_ylt=Awr48skTgXpnfHcKcUZXNyoA;_ylu=Y29sbwNncTEEcG9zAzIEdnRpZAMEc2VjA3Ny/RV=2/RE=1737291283/RO=10/RU=https%3a%2f%2fwww.diadona.id%2ffood%2f16-makanan-khas-bengkulu-paling-populer-dan-siap-menggugah-seleramu-2001172.html/RK=2/RS=tkGxcpid6.Z_vnabsUKW3yuM4w8-" target="_blank">jelajahi
+        </a></p>
+        
+    </main>
+    <footer>
+        <p>&copy; 2025 Portal Informasi Bengkulu. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>

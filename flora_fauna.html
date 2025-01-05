@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informasi Flora dan Fauna Khas Provinsi Bengkulu">
+    <title>Flora dan Fauna Bengkulu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Animasi untuk Fade In */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background-image:url(bengkulu.jpg);
+            color:rgb(3, 87, 79);
+            padding: 60px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #003939;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #007070;
+            transform: scale(1.1);
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background-color: #002626;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            margin-top: 20px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #005f5f;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        p {
+            opacity: 0;
+            animation: fadeInText 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Gambar responsif */
+        .flora-fauna-image {
+            width: 200px;
+            max-width: 600px;
+            height: auto;
+            margin: 20px 0;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsif untuk tampilan mobile */
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 14px;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flora dan Fauna Khas Bengkulu</h1>
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="sejarah.html">Sejarah</a>
+        <a href="makanan_khas.html">Makanan Khas</a>
+        <a href="kabupaten_kota.html">Kabupaten/Kota</a>
+        <a href="wisata.html">Wisata</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Flora Khas Bengkulu</h2>
+            <p>Provinsi Bengkulu terkenal dengan kekayaan flora yang unik dan endemik. Salah satu flora yang paling ikonik adalah bunga <strong>Rafflesia arnoldii</strong>, yang dikenal sebagai bunga terbesar di dunia. Bunga ini dapat ditemukan di kawasan hutan lindung, terutama di Kabupaten Kepahiang dan Bengkulu Utara.</p>
+            <img src="rafflesia.jpg" alt="Rafflesia arnoldii" class="flora-fauna-image">
+            <p>Selain itu, Bengkulu juga memiliki tanaman lain yang penting secara ekologis, seperti:</p>
+            <ul>
+                <li><strong>Amorphophallus titanum</strong>: Bunga bangkai raksasa yang menjadi daya tarik wisata alam.</li>
+                <li><strong>Pohon Damar</strong>: Kayu keras yang sering dimanfaatkan untuk berbagai keperluan konstruksi dan resin alami.</li>
+                <li><strong>Rotan</strong>: Tanaman yang banyak ditemukan di hutan Bengkulu dan dimanfaatkan untuk kerajinan tangan.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Fauna Khas Bengkulu</h2>
+            <p>Di Bengkulu, fauna khas juga sangat beragam. Beberapa spesies langka yang masih dapat ditemukan di wilayah ini antara lain:</p>
+            <img src="harimau.jpg" alt="Harimau Sumatra" class="flora-fauna-image">
+            <ul>
+                <li><strong>Harimau Sumatra</strong> (<em>Panthera tigris sumatrae</em>): Salah satu subspesies harimau yang sangat terancam punah. Populasi kecilnya masih hidup di hutan Bengkulu.</li>
+                <li><strong>Beruang Madu</strong> (<em>Helarctos malayanus</em>): Mamalia ini dikenal dengan bulunya yang hitam mengkilap dan bercak putih di dada.</li>
+                <li><strong>Burung Kuau Raja</strong> (<em>Argusianus argus</em>): Burung yang memiliki ekor panjang dan pola bulu yang indah, sering ditemukan di hutan dataran rendah.</li>
+                <li><strong>Kepiting Bakau</strong>: Banyak ditemukan di kawasan pesisir Bengkulu, terutama di hutan mangrove.</li>
+            </ul>
+            <p>Selain itu, fauna akuatik seperti ikan air tawar di Danau Tes dan berbagai jenis burung migran yang singgah di daerah pantai juga menjadi kekayaan alam Bengkulu.</p>
+        </section>
+        <section>
+            <h2>Pelestarian Flora dan Fauna</h2>
+            <p>Untuk melestarikan kekayaan flora dan fauna, Bengkulu telah menetapkan beberapa kawasan konservasi, seperti:</p>
+            <ul>
+                <li>Taman Nasional Kerinci Seblat: Menjadi habitat bagi banyak spesies langka termasuk Harimau Sumatra.</li>
+                <li>Hutan Lindung Bukit Daun: Kawasan penting untuk pelestarian flora seperti Rafflesia dan bunga bangkai.</li>
+                <li>Kawasan Mangrove: Pelestarian ekosistem mangrove untuk mencegah abrasi dan menjaga habitat fauna pesisir.</li>
+            </ul>
+            <p>Masyarakat setempat juga diajak untuk berpartisipasi dalam program ekowisata yang ramah lingkungan, sehingga dapat menjaga keseimbangan antara pelestarian alam dan pengembangan ekonomi.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Portal Informasi Bengkulu. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daftar Kabupaten dan Kota di Provinsi Bengkulu dengan informasi lengkap">
+    <title>Kabupaten dan Kota Bengkulu</title>
+    <style>
+        /* Reset default margin/padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animasi untuk Fade In */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Header */
+        header {
+            background-image: url(bengkulu.jpg);
+            color: rgb(3, 87, 79);
+            padding: 60px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideInDown 1s ease-out;
+        }
+
+        /* Animasi untuk Header */
+        @keyframes slideInDown {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        nav {
+            background-color: #003939;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: slideInUp 1s ease-out;
+        }
+
+        /* Animasi untuk Navigasi */
+        @keyframes slideInUp {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #007070;
+            transform: scale(1.1);
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out 1s;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #002626;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 14px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideInUp 1s ease-out 1.5s;
+        }
+
+        /* Tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            animation: tableFadeIn 2s ease-in-out 1s;
+        }
+
+        @keyframes tableFadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        th, td {
+            padding: 12px 20px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #005f5f;
+            color: white;
+            font-size: 18px;
+        }
+
+        td {
+            background-color: #fff;
+            color: #333;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        td:hover {
+            background-color: #007070;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Animasi untuk Teks di dalam Konten */
+        h2, p {
+            opacity: 0;
+            animation: fadeInText 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Kartu Informasi */
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-header {
+            background-color: #005f5f;
+            color: white;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .card-body {
+            padding: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kabupaten dan Kota di Provinsi Bengkulu</h1>
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="sejarah.html">Sejarah</a>
+        <a href="makanan_khas.html">Makanan Khas</a>
+        <a href="flora_fauna.html">Flora & Fauna</a>
+        <a href="wisata.html">Wisata</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Daftar Kabupaten dan Kota</h2>
+            <p>Provinsi Bengkulu terdiri dari 9 kabupaten dan 1 kota. Berikut adalah informasi rinci mengenai masing-masing wilayah:</p>
+
+            <!-- Kartu Informasi -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Informasi Umum</h3>
+                </div>
+                <div class="card-body">
+                    <p>Provinsi Bengkulu memiliki potensi alam dan budaya yang kaya. Setiap kabupaten memiliki ciri khas dan daya tariknya masing-masing. Kami harap informasi berikut dapat memberikan wawasan lebih lanjut tentang daerah ini.</p>
+                </div>
+            </div>
+
+            <!-- Tabel Daftar Kabupaten/Kota -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Kabupaten/Kota</th>
+                        <th>Ibu Kota</th>
+                        <th>Keterangan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Kota Bengkulu</td>
+                        <td>Bengkulu</td>
+                        <td>Kota terbesar sekaligus ibu kota Provinsi Bengkulu. Terkenal dengan Benteng Marlborough, Pantai Panjang, dan perannya dalam sejarah perjuangan kemerdekaan Indonesia.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Kabupaten Bengkulu Selatan</td>
+                        <td>Manna</td>
+                        <td>Memiliki tradisi budaya khas Serawai dan wisata pantai seperti Pantai Pasar Bawah serta air terjun di wilayah pegunungan.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Kabupaten Bengkulu Tengah</td>
+                        <td>Kota Karang Tinggi</td>
+                        <td>Salah satu kabupaten termuda di Bengkulu, memiliki potensi perkebunan seperti kelapa sawit dan kopi. Wilayah ini juga memiliki banyak situs bersejarah.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Kabupaten Bengkulu Utara</td>
+                        <td>Arga Makmur</td>
+                        <td>Dikenal dengan keindahan wisata alamnya seperti Air Terjun Curug 9 dan Gunung Kaba. Perkebunan karet dan kelapa sawit menjadi sektor unggulan.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Kabupaten Kaur</td>
+                        <td>Bintuhan</td>
+                        <td>Wilayah ini memiliki wisata pantai seperti Pantai Linau, kawasan terumbu karang, dan budaya khas seperti Tabot.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Kabupaten Kepahiang</td>
+                        <td>Kepahiang</td>
+                        <td>Terkemuka dengan perkebunan kopi robusta yang diekspor ke berbagai negara. Air terjun dan taman bunga menjadi daya tarik wisata alamnya.</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Kabupaten Lebong</td>
+                        <td>Muara Aman</td>
+                        <td>Dikenal dengan Danau Tes, salah satu danau terbesar di Bengkulu, dan tambang emas tradisional yang masih aktif hingga kini.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Kabupaten Mukomuko</td>
+                        <td>Mukomuko</td>
+                        <td>Wilayah dengan hasil perikanan laut dan darat yang melimpah. Juga menjadi penghasil kelapa sawit terbesar di provinsi ini.</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Kabupaten Rejang Lebong</td>
+                        <td>Curup</td>
+                        <td>Memiliki keindahan alam seperti Danau Mas Harun Bastari, Perkebunan Teh Bukit Daun, dan iklim sejuk yang mendukung pertanian hortikultura.</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Kabupaten Seluma</td>
+                        <td>Tais</td>
+                        <td>Dikenal dengan pantai yang indah seperti Pantai Seluma dan kekayaan budaya tradisional yang terjaga hingga kini.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Portal Informasi Bengkulu. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>

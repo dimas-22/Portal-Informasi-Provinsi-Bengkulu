@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal Informasi Provinsi Bengkulu">
+    <title>Portal Provinsi Bengkulu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animasi untuk fade-in */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background-image:url(bengkulu.jpg);
+            color: rgb(3, 87, 79);
+            padding: 60px;
+            text-align: center;
+            animation: slideInDown 1s ease-out;
+        }
+
+        /* Animasi untuk header */
+        @keyframes slideInDown {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        nav {
+            background-color: #003939;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            animation: slideInUp 1s ease-out;
+        }
+
+        /* Animasi untuk nav */
+        @keyframes slideInUp {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #007070;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out 1s;
+        }
+
+        footer {
+            background-color: #002626;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            animation: slideInUp 1s ease-out 1.5s;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portal Informasi Provinsi Bengkulu</h1>
+    </header>
+    <nav>
+        <a href="sejarah.html">Sejarah</a>
+        <a href="makanan_khas.html">Makanan Khas</a>
+        <a href="kabupaten_kota.html">Kabupaten/Kota</a>
+        <a href="flora_fauna.html">Flora & Fauna</a>
+        <a href="wisata.html">Wisata</a>
+    </nav>
+    <main>
+        <h2>Selamat Datang di Portal Informasi Bengkulu</h2>
+        <p>Pilih salah satu menu di atas untuk menjelajahi lebih lanjut tentang Provinsi Bengkulu.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Portal Informasi Bengkulu. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
